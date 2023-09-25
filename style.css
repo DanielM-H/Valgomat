@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Change this to 'row' */
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.boks {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Add a container to hold the radio buttons */
+.radio-container {
+    display: flex;
+    flex-direction: row; /* Arrange radio buttons horizontally */
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+input[type="radio"] {
+    margin: 0 20px; /* Adjust spacing between radio buttons */
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}

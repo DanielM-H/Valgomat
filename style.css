@@ -24,6 +24,7 @@ form {
     padding: 20px;
     border-radius: 5px;
     background-color: #f0f0f0;
+    border-radius: 2rem;
 }
 
 .boks {
@@ -66,4 +67,8 @@ button:hover {
 #result {
     font-size: 1.2rem;
     margin-top: 20px;
+}
+
+.result-header {
+    display: none;
 }

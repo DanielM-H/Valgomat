@@ -311,7 +311,7 @@ const questions = [
     }
 ];
 
-let partyScores = {
+const partyScores = {
     MDG: 0,
     A: 0,
     H: 0,
@@ -370,18 +370,24 @@ function showResult() {
     let entries = Object.entries(partyScores);
 
     // Sorter arrayet etter verdiene i stigende rekkefølge
-    entries.sort ((a, b) => b [1] - a [1]);
+    entries.sort((a, b) => b[1] - a[1]);
 
     // Konverter arrayet tilbake til et objekt
     let sortedPartyScores = Object.fromEntries(entries);
 
     console.log("Sortert etter poengsum: ");
-    console.log(sortedPartyScores); 
+    console.log(sortedPartyScores);
 
-    // Skriver ut resultatet til HTML
+    // Skriv ut resultatet til HTML
     const resultBox = document.getElementById("result");
     for (let party in sortedPartyScores) {
         resultBox.innerHTML += party + ": " + sortedPartyScores[party] + "<br>";
     }
-    
+
+    // Display the "Ditt resultat:" element
+    const resultHeader = document.querySelector('.result-header');
+    resultHeader.style.display = 'block';
 }
+
+    
+

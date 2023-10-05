@@ -389,5 +389,14 @@ function showResult() {
     resultHeader.style.display = 'block';
 }
 
-    
+const btnBack = document.getElementById('btnBack');
+btnBack.addEventListener('click', previousQuestion);
 
+function previousQuestion() {
+    qidx--;
+    if (qidx >= 0) {
+        questionT.innerHTML = questions[qidx].question;
+    } else {
+        qidx = 0; // Reset to prevent going below the first question
+    }
+}

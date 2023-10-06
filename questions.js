@@ -1,4 +1,3 @@
-// constants.js
 const questions = [
     {
         question: 'Utepils på Torgallmenningen bør bli et fast tilbud',
